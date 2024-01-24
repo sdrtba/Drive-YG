@@ -1,12 +1,33 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using YG;
 
 public class UIHandler : MonoBehaviour
 {
     [SerializeField] private Slider slider;
     [SerializeField] private GameObject canvas;
-    private bool isPause = false;
+    private bool _isPause = false;
+    private int maxLevel;
+
+    private void OnEnable() => YandexGame.GetDataEvent += GetLoad;
+    private void OnDisable() => YandexGame.GetDataEvent -= GetLoad;
+
+    void Start()
+    {
+        Time.timeScale = 1;
+        slider.value = AudioListener.volume;
+    }
+
+    void GetLoad()
+    {
+        maxLevel = YandexGame.savesData.maxLevel;
+    }
+
+    public void NewGame()
+    {
+        SceneManager.LoadScene(maxLevel + 1);
+    }
 
     public void Play(int level)
     {
@@ -37,10 +58,10 @@ public class UIHandler : MonoBehaviour
 
     public void Pause()
     {
-        if (isPause) Time.timeScale = 1;
+        if (_isPause) Time.timeScale = 1;
         else Time.timeScale = 0;
         canvas.SetActive(!canvas.activeSelf);
-        isPause = !isPause;
+        _isPause = !_isPause;
     }
 
     void Update()

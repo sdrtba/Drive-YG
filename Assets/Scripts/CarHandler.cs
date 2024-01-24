@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using YG;
 
 public class CarHandler : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class CarHandler : MonoBehaviour
 
     void Start()
     {
+        YandexGame.FullscreenShow();
         _rb = GetComponent<Rigidbody2D>();
     }
 
@@ -50,6 +52,9 @@ public class CarHandler : MonoBehaviour
         else if (collider.tag == "Finish")
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+            YandexGame.savesData.maxLevel = YandexGame.savesData.maxLevel + 1;
+            YandexGame.SaveProgress();
         }
     }
 }
