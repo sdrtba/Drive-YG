@@ -1,5 +1,4 @@
 using System.Collections;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -44,13 +43,13 @@ public class CarHandler : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D collider)
     {
-        if (collider.tag == "Trap" || collider.tag == "WeakFloor" && _isJumpEnable)
+        if (collider.tag == "Trap" && _isJumpEnable || collider.tag == "WeakFloor" && _isJumpEnable)
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
         else if (collider.tag == "Finish")
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }
