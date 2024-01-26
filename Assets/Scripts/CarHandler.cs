@@ -10,6 +10,7 @@ public class CarHandler : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private float force;
     private bool _isJumpEnable = true;
+    private bool _isFocus = false;
     private Rigidbody2D _rb;
     private float _axis;
 
@@ -24,6 +25,10 @@ public class CarHandler : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && _isJumpEnable)
         {
             StartCoroutine(Jump());
+        }
+        if (Input.anyKey)
+        {
+            _isFocus = true;
         }
     }
 
@@ -43,7 +48,7 @@ public class CarHandler : MonoBehaviour
         _axis = Input.GetAxisRaw("Horizontal") * rotationSpeed;
 
         if (_axis != 0) _rb.AddTorque(-_axis);
-        _rb.AddForce(transform.up * speed);
+        if (_isFocus) _rb.AddForce(transform.up * speed);
     }
 
     void OnTriggerStay2D(Collider2D collider)
@@ -56,6 +61,8 @@ public class CarHandler : MonoBehaviour
         {
             YandexGame.savesData.maxLevel = YandexGame.savesData.maxLevel + 1;
             YandexGame.SaveProgress();
+
+            YandexGame.FullscreenShow();
 
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
