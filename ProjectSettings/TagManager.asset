@@ -4,9 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Trap
   - Wall
   - WeakFloor
+  - Spike
   layers:
   - Default
   - TransparentFX

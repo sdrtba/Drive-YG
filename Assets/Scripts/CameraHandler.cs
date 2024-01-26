@@ -2,8 +2,13 @@ using UnityEngine;
 
 public class CameraHandler : MonoBehaviour
 {
-    [SerializeField] private Transform target;
     [SerializeField] private float speed;
+    private Transform target;
+
+    void Start()
+    {
+        target = GameObject.Find("Car/CarBody").transform;
+    }
 
     void FixedUpdate()
     {

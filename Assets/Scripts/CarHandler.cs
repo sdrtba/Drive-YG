@@ -5,26 +5,36 @@ using YG;
 
 public class CarHandler : MonoBehaviour
 {
+    [SerializeField] private GameObject winCanvas;
+    [SerializeField] private GameObject settingsCanvas;
+
     [SerializeField] private Animation jumpAnimation;
+
     [SerializeField] private float rotationSpeed;
     [SerializeField] private float speed;
     [SerializeField] private float force;
-    private bool _isJumpEnable = true;
+
+    private bool _isOnFloor = true;
     private bool _isFocus = false;
+    private bool _isWin = false;
     private Rigidbody2D _rb;
     private float _axis;
 
     void Start()
     {
-        YandexGame.FullscreenShow();
         _rb = GetComponent<Rigidbody2D>();
+        YandexGame.FullscreenShow();
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && _isJumpEnable)
+        if (Input.GetKeyDown(KeyCode.Space) && _isOnFloor)
         {
             StartCoroutine(Jump());
+        }
+        if (Input.GetKeyDown(KeyCode.Escape) && !_isWin)
+        {
+            TogglePause();
         }
         if (Input.anyKey)
         {
@@ -32,16 +42,21 @@ public class CarHandler : MonoBehaviour
         }
     }
 
+    private void TogglePause()
+    {
+        if (Time.timeScale == 0) Time.timeScale = 1;
+        else Time.timeScale = 0;
+        settingsCanvas.SetActive(!settingsCanvas.activeSelf);
+    }
+
     private IEnumerator Jump()
     {
-        _isJumpEnable = false;
+        _isOnFloor = false;
         _rb.AddForce(transform.up * force);
         jumpAnimation.Play();
         yield return new WaitForSeconds(1f);
-        _isJumpEnable = true;
+        _isOnFloor = true;
     }
-
-
 
     void FixedUpdate()
     {
@@ -53,7 +68,7 @@ public class CarHandler : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D collider)
     {
-        if (collider.tag == "Trap" && _isJumpEnable || collider.tag == "WeakFloor" && _isJumpEnable)
+        if (collider.tag == "Trap" || collider.tag == "WeakFloor" && _isOnFloor)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
@@ -62,9 +77,8 @@ public class CarHandler : MonoBehaviour
             YandexGame.savesData.maxLevel = YandexGame.savesData.maxLevel + 1;
             YandexGame.SaveProgress();
 
-            YandexGame.FullscreenShow();
-
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            Time.timeScale = 0;
+            winCanvas.SetActive(true);
         }
     }
 }

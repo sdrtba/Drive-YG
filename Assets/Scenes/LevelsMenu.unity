@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 11154212}
   - component: {fileID: 11154211}
   m_Layer: 5
-  m_Name: Back Btn
+  m_Name: Menu Btn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -269,7 +269,7 @@ GameObject:
   - component: {fileID: 22916108}
   - component: {fileID: 22916107}
   m_Layer: 5
-  m_Name: Btn (7)
+  m_Name: 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -334,7 +334,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 22916108}
   m_OnClick:
     m_PersistentCalls:
@@ -402,7 +402,7 @@ GameObject:
   - component: {fileID: 27353060}
   - component: {fileID: 27353059}
   m_Layer: 5
-  m_Name: Btn (24)
+  m_Name: 24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -467,7 +467,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 27353060}
   m_OnClick:
     m_PersistentCalls:
@@ -836,7 +836,7 @@ GameObject:
   - component: {fileID: 332630673}
   - component: {fileID: 332630672}
   m_Layer: 5
-  m_Name: Btn (14)
+  m_Name: 14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -901,7 +901,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 332630673}
   m_OnClick:
     m_PersistentCalls:
@@ -969,7 +969,7 @@ GameObject:
   - component: {fileID: 366502991}
   - component: {fileID: 366502990}
   m_Layer: 5
-  m_Name: Btn (9)
+  m_Name: 9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1034,7 +1034,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 366502991}
   m_OnClick:
     m_PersistentCalls:
@@ -1572,7 +1572,7 @@ GameObject:
   - component: {fileID: 484573707}
   - component: {fileID: 484573706}
   m_Layer: 5
-  m_Name: Btn (4)
+  m_Name: 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1637,7 +1637,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 484573707}
   m_OnClick:
     m_PersistentCalls:
@@ -1784,7 +1784,7 @@ GameObject:
   - component: {fileID: 620479155}
   - component: {fileID: 620479154}
   m_Layer: 5
-  m_Name: Btn (17)
+  m_Name: 17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1849,7 +1849,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 620479155}
   m_OnClick:
     m_PersistentCalls:
@@ -2483,7 +2483,7 @@ GameObject:
   - component: {fileID: 868921140}
   - component: {fileID: 868921139}
   m_Layer: 5
-  m_Name: Btn (10)
+  m_Name: 10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2548,7 +2548,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 868921140}
   m_OnClick:
     m_PersistentCalls:
@@ -2616,7 +2616,7 @@ GameObject:
   - component: {fileID: 912949235}
   - component: {fileID: 912949234}
   m_Layer: 5
-  m_Name: Btn (8)
+  m_Name: 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2681,7 +2681,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 912949235}
   m_OnClick:
     m_PersistentCalls:
@@ -2907,7 +2907,7 @@ GameObject:
   - component: {fileID: 1062640387}
   - component: {fileID: 1062640386}
   m_Layer: 5
-  m_Name: Btn (12)
+  m_Name: 12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2972,7 +2972,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1062640387}
   m_OnClick:
     m_PersistentCalls:
@@ -3040,7 +3040,7 @@ GameObject:
   - component: {fileID: 1091530120}
   - component: {fileID: 1091530119}
   m_Layer: 5
-  m_Name: Btn (16)
+  m_Name: 16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3105,7 +3105,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1091530120}
   m_OnClick:
     m_PersistentCalls:
@@ -3643,7 +3643,7 @@ GameObject:
   - component: {fileID: 1261603568}
   - component: {fileID: 1261603567}
   m_Layer: 5
-  m_Name: Btn (6)
+  m_Name: 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3708,7 +3708,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1261603568}
   m_OnClick:
     m_PersistentCalls:
@@ -3776,7 +3776,7 @@ GameObject:
   - component: {fileID: 1281620448}
   - component: {fileID: 1281620447}
   m_Layer: 5
-  m_Name: Btn (13)
+  m_Name: 13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3841,7 +3841,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1281620448}
   m_OnClick:
     m_PersistentCalls:
@@ -4067,7 +4067,7 @@ GameObject:
   - component: {fileID: 1404042899}
   - component: {fileID: 1404042898}
   m_Layer: 5
-  m_Name: Btn (25)
+  m_Name: 25
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4132,7 +4132,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1404042899}
   m_OnClick:
     m_PersistentCalls:
@@ -4200,7 +4200,7 @@ GameObject:
   - component: {fileID: 1425556514}
   - component: {fileID: 1425556513}
   m_Layer: 5
-  m_Name: Btn (20)
+  m_Name: 20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4265,7 +4265,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1425556514}
   m_OnClick:
     m_PersistentCalls:
@@ -4635,6 +4635,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 398638359}
+  continueBtn: {fileID: 0}
+  levelBtns:
+  - {fileID: 1618820120}
+  - {fileID: 1975682751}
+  - {fileID: 2122872850}
+  - {fileID: 484573706}
+  - {fileID: 2047532068}
+  - {fileID: 1261603567}
+  - {fileID: 22916107}
+  - {fileID: 912949234}
+  - {fileID: 366502990}
+  - {fileID: 868921139}
+  - {fileID: 2136303536}
+  - {fileID: 1062640386}
+  - {fileID: 1281620447}
+  - {fileID: 332630672}
+  - {fileID: 1723597393}
+  - {fileID: 1091530119}
+  - {fileID: 620479154}
+  - {fileID: 1821655992}
+  - {fileID: 1714173942}
+  - {fileID: 1425556513}
+  - {fileID: 1999301364}
+  - {fileID: 1646493799}
+  - {fileID: 1757721283}
+  - {fileID: 27353059}
+  - {fileID: 1404042898}
+  spritesBtns: []
 --- !u!1 &1618820118
 GameObject:
   m_ObjectHideFlags: 0
@@ -4648,7 +4676,7 @@ GameObject:
   - component: {fileID: 1618820121}
   - component: {fileID: 1618820120}
   m_Layer: 5
-  m_Name: Btn (1)
+  m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4713,7 +4741,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1618820121}
   m_OnClick:
     m_PersistentCalls:
@@ -4781,7 +4809,7 @@ GameObject:
   - component: {fileID: 1646493800}
   - component: {fileID: 1646493799}
   m_Layer: 5
-  m_Name: Btn (22)
+  m_Name: 22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4846,7 +4874,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1646493800}
   m_OnClick:
     m_PersistentCalls:
@@ -4914,7 +4942,7 @@ GameObject:
   - component: {fileID: 1714173943}
   - component: {fileID: 1714173942}
   m_Layer: 5
-  m_Name: Btn (19)
+  m_Name: 19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4979,7 +5007,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1714173943}
   m_OnClick:
     m_PersistentCalls:
@@ -5047,7 +5075,7 @@ GameObject:
   - component: {fileID: 1723597394}
   - component: {fileID: 1723597393}
   m_Layer: 5
-  m_Name: Btn (15)
+  m_Name: 15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5112,7 +5140,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1723597394}
   m_OnClick:
     m_PersistentCalls:
@@ -5180,7 +5208,7 @@ GameObject:
   - component: {fileID: 1757721284}
   - component: {fileID: 1757721283}
   m_Layer: 5
-  m_Name: Btn (23)
+  m_Name: 23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5245,7 +5273,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1757721284}
   m_OnClick:
     m_PersistentCalls:
@@ -5392,7 +5420,7 @@ GameObject:
   - component: {fileID: 1821655993}
   - component: {fileID: 1821655992}
   m_Layer: 5
-  m_Name: Btn (18)
+  m_Name: 18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5457,7 +5485,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1821655993}
   m_OnClick:
     m_PersistentCalls:
@@ -5600,7 +5628,7 @@ GameObject:
   - component: {fileID: 1975682752}
   - component: {fileID: 1975682751}
   m_Layer: 5
-  m_Name: Btn (2)
+  m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5665,7 +5693,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1975682752}
   m_OnClick:
     m_PersistentCalls:
@@ -5733,7 +5761,7 @@ GameObject:
   - component: {fileID: 1999301365}
   - component: {fileID: 1999301364}
   m_Layer: 5
-  m_Name: Btn (21)
+  m_Name: 21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5798,7 +5826,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1999301365}
   m_OnClick:
     m_PersistentCalls:
@@ -6001,7 +6029,7 @@ GameObject:
   - component: {fileID: 2047532069}
   - component: {fileID: 2047532068}
   m_Layer: 5
-  m_Name: Btn (5)
+  m_Name: 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6066,7 +6094,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 2047532069}
   m_OnClick:
     m_PersistentCalls:
@@ -6268,7 +6296,7 @@ Canvas:
   m_GameObject: {fileID: 2063259665}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 774764421}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -6318,7 +6346,7 @@ GameObject:
   - component: {fileID: 2122872851}
   - component: {fileID: 2122872850}
   m_Layer: 5
-  m_Name: Btn (3)
+  m_Name: 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6383,7 +6411,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 2122872851}
   m_OnClick:
     m_PersistentCalls:
@@ -6451,7 +6479,7 @@ GameObject:
   - component: {fileID: 2136303537}
   - component: {fileID: 2136303536}
   m_Layer: 5
-  m_Name: Btn (11)
+  m_Name: 11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6516,7 +6544,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 2136303537}
   m_OnClick:
     m_PersistentCalls:
