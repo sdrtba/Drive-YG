@@ -1403,9 +1403,9 @@ MonoBehaviour:
   textLComponent: {fileID: 427949348}
   infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
   text: 
-  ru: "\u041D\u0430\u0437\u0430\u0434"
-  en: Back
-  tr: Geri
+  ru: "\u041C\u0435\u043D\u044E"
+  en: Menu
+  tr: "Men\xFC"
   az: 
   be: 
   he: 
@@ -1471,7 +1471,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u041D\u0430\u0437\u0430\u0434"
+  m_Text: "\u041C\u0435\u043D\u044E"
 --- !u!222 &427949349
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -8,6 +8,7 @@ public class CarHandler : MonoBehaviour
     [SerializeField] private Animation jumpAnimation;
     [SerializeField] private float rotationSpeed;
     [SerializeField] private float speed;
+    [SerializeField] private float force;
     private bool _isJumpEnable = true;
     private Rigidbody2D _rb;
     private float _axis;
@@ -29,11 +30,13 @@ public class CarHandler : MonoBehaviour
     private IEnumerator Jump()
     {
         _isJumpEnable = false;
-        _rb.AddForce(transform.up * 100);
+        _rb.AddForce(transform.up * force);
         jumpAnimation.Play();
         yield return new WaitForSeconds(1f);
         _isJumpEnable = true;
     }
+
+
 
     void FixedUpdate()
     {
@@ -51,10 +54,10 @@ public class CarHandler : MonoBehaviour
         }
         else if (collider.tag == "Finish")
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-
             YandexGame.savesData.maxLevel = YandexGame.savesData.maxLevel + 1;
             YandexGame.SaveProgress();
+
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }
