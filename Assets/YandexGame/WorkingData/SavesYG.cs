@@ -1,4 +1,6 @@
-﻿namespace YG
+﻿using System.Collections.Generic;
+
+namespace YG
 {
     [System.Serializable]
     public class SavesYG
@@ -12,6 +14,8 @@
         // Ваши сохранения
         public int maxLevel = 1;
         public int coins = 0;
+        public bool[] isBought = new bool[6];
+        public List<string> idCoinsList = new List<string>();
         public int curSprite = 0;
     }
 }

@@ -159,7 +159,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -400}
+  m_AnchoredPosition: {x: 0, y: -350}
   m_SizeDelta: {x: 200, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &11154211
@@ -208,12 +208,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1602377844}
         m_TargetAssemblyTypeName: UIHandler, Assembly-CSharp
-        m_MethodName: OpenMenu
-        m_Mode: 1
+        m_MethodName: LoadScene
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -283,16 +283,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 22916105}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 89.95392}
-  m_LocalScale: {x: 0.009260001, y: 0.009260001, z: 0.009260001}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0008242259}
+  m_LocalScale: {x: 0.999673, y: 0.999673, z: 0.999673}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1467046064}
-  m_Father: {fileID: 2023189473}
+  m_Father: {fileID: 1985368425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.9372864, y: 0.44747162}
+  m_AnchoredPosition: {x: -110.00196, y: 90}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &22916107
@@ -341,12 +341,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1602377844}
         m_TargetAssemblyTypeName: UIHandler, Assembly-CSharp
-        m_MethodName: Play
+        m_MethodName: LoadScene
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 7
+          m_IntArgument: 9
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -416,16 +416,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 27353057}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 89.95392}
-  m_LocalScale: {x: 0.009260001, y: 0.009260001, z: 0.009260001}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0008242259}
+  m_LocalScale: {x: 0.999673, y: 0.999673, z: 0.999673}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 385022013}
-  m_Father: {fileID: 2023189473}
+  m_Father: {fileID: 1985368425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.1006165, y: -2.609375}
+  m_AnchoredPosition: {x: 110.00197, y: -240}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &27353059
@@ -474,12 +474,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1602377844}
         m_TargetAssemblyTypeName: UIHandler, Assembly-CSharp
-        m_MethodName: Play
+        m_MethodName: LoadScene
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 24
+          m_IntArgument: 26
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -850,16 +850,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 332630670}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 89.95392}
-  m_LocalScale: {x: 0.009260001, y: 0.009260001, z: 0.009260001}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0008242259}
+  m_LocalScale: {x: 0.999673, y: 0.999673, z: 0.999673}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 696957312}
-  m_Father: {fileID: 2023189473}
+  m_Father: {fileID: 1985368425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.1006165, y: -0.5714798}
+  m_AnchoredPosition: {x: 110.00197, y: -20}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &332630672
@@ -908,12 +908,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1602377844}
         m_TargetAssemblyTypeName: UIHandler, Assembly-CSharp
-        m_MethodName: Play
+        m_MethodName: LoadScene
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 14
+          m_IntArgument: 16
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -983,16 +983,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 366502988}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 89.95392}
-  m_LocalScale: {x: 0.009260001, y: 0.009260001, z: 0.009260001}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0008242259}
+  m_LocalScale: {x: 0.999673, y: 0.999673, z: 0.999673}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1105466314}
-  m_Father: {fileID: 2023189473}
+  m_Father: {fileID: 1985368425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.1006165, y: 0.44747162}
+  m_AnchoredPosition: {x: 110.00197, y: 90}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &366502990
@@ -1041,12 +1041,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1602377844}
         m_TargetAssemblyTypeName: UIHandler, Assembly-CSharp
-        m_MethodName: Play
+        m_MethodName: LoadScene
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 9
+          m_IntArgument: 11
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1345,11 +1345,11 @@ RectTransform:
   - {fileID: 229181204}
   m_Father: {fileID: 2063259669}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -809.99994, y: 480}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 150, y: -130}
   m_SizeDelta: {x: 100, y: 20}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 1}
 --- !u!1 &427949345
 GameObject:
   m_ObjectHideFlags: 0
@@ -1586,16 +1586,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 484573704}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 89.95392}
-  m_LocalScale: {x: 0.009260001, y: 0.009260001, z: 0.009260001}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0008242259}
+  m_LocalScale: {x: 0.999673, y: 0.999673, z: 0.999673}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1138269565}
-  m_Father: {fileID: 2023189473}
+  m_Father: {fileID: 1985368425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.1006165, y: 1.4664154}
+  m_AnchoredPosition: {x: 110.00197, y: 200}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &484573706
@@ -1644,12 +1644,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1602377844}
         m_TargetAssemblyTypeName: UIHandler, Assembly-CSharp
-        m_MethodName: Play
+        m_MethodName: LoadScene
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 4
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1798,16 +1798,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 620479152}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 89.95392}
-  m_LocalScale: {x: 0.009260001, y: 0.009260001, z: 0.009260001}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0008242259}
+  m_LocalScale: {x: 0.999673, y: 0.999673, z: 0.999673}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 594531007}
-  m_Father: {fileID: 2023189473}
+  m_Father: {fileID: 1985368425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.9372864, y: -1.5904083}
+  m_AnchoredPosition: {x: -110.00196, y: -130}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &620479154
@@ -1856,12 +1856,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1602377844}
         m_TargetAssemblyTypeName: UIHandler, Assembly-CSharp
-        m_MethodName: Play
+        m_MethodName: LoadScene
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 17
+          m_IntArgument: 19
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2497,16 +2497,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 868921137}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 89.95392}
-  m_LocalScale: {x: 0.009260001, y: 0.009260001, z: 0.009260001}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0008242259}
+  m_LocalScale: {x: 0.999673, y: 0.999673, z: 0.999673}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 944745892}
-  m_Father: {fileID: 2023189473}
+  m_Father: {fileID: 1985368425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.1195679, y: 0.44747162}
+  m_AnchoredPosition: {x: 220.00394, y: 90}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &868921139
@@ -2555,12 +2555,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1602377844}
         m_TargetAssemblyTypeName: UIHandler, Assembly-CSharp
-        m_MethodName: Play
+        m_MethodName: LoadScene
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 10
+          m_IntArgument: 12
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2630,16 +2630,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 912949232}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 89.95392}
-  m_LocalScale: {x: 0.009260001, y: 0.009260001, z: 0.009260001}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0008242259}
+  m_LocalScale: {x: 0.999673, y: 0.999673, z: 0.999673}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1346367970}
-  m_Father: {fileID: 2023189473}
+  m_Father: {fileID: 1985368425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.08166499, y: 0.44747162}
+  m_AnchoredPosition: {x: -0, y: 90}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &912949234
@@ -2688,12 +2688,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1602377844}
         m_TargetAssemblyTypeName: UIHandler, Assembly-CSharp
-        m_MethodName: Play
+        m_MethodName: LoadScene
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 8
+          m_IntArgument: 10
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2921,16 +2921,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1062640384}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 89.95392}
-  m_LocalScale: {x: 0.009260001, y: 0.009260001, z: 0.009260001}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0008242259}
+  m_LocalScale: {x: 0.999673, y: 0.999673, z: 0.999673}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 819916912}
-  m_Father: {fileID: 2023189473}
+  m_Father: {fileID: 1985368425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.9372864, y: -0.5714798}
+  m_AnchoredPosition: {x: -110.00196, y: -20}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1062640386
@@ -2979,12 +2979,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1602377844}
         m_TargetAssemblyTypeName: UIHandler, Assembly-CSharp
-        m_MethodName: Play
+        m_MethodName: LoadScene
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 12
+          m_IntArgument: 14
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3054,16 +3054,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1091530117}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 89.95392}
-  m_LocalScale: {x: 0.009260001, y: 0.009260001, z: 0.009260001}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0008242259}
+  m_LocalScale: {x: 0.999673, y: 0.999673, z: 0.999673}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 264771130}
-  m_Father: {fileID: 2023189473}
+  m_Father: {fileID: 1985368425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.9562378, y: -1.5904083}
+  m_AnchoredPosition: {x: -220.0039, y: -130}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1091530119
@@ -3112,12 +3112,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1602377844}
         m_TargetAssemblyTypeName: UIHandler, Assembly-CSharp
-        m_MethodName: Play
+        m_MethodName: LoadScene
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 16
+          m_IntArgument: 18
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3657,16 +3657,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1261603565}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 89.95392}
-  m_LocalScale: {x: 0.009260001, y: 0.009260001, z: 0.009260001}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0008242259}
+  m_LocalScale: {x: 0.999673, y: 0.999673, z: 0.999673}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 784528699}
-  m_Father: {fileID: 2023189473}
+  m_Father: {fileID: 1985368425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.9562378, y: 0.44747162}
+  m_AnchoredPosition: {x: -220.0039, y: 90}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1261603567
@@ -3715,12 +3715,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1602377844}
         m_TargetAssemblyTypeName: UIHandler, Assembly-CSharp
-        m_MethodName: Play
+        m_MethodName: LoadScene
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 6
+          m_IntArgument: 8
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3790,16 +3790,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1281620445}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 89.95392}
-  m_LocalScale: {x: 0.009260001, y: 0.009260001, z: 0.009260001}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0008242259}
+  m_LocalScale: {x: 0.999673, y: 0.999673, z: 0.999673}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1254827186}
-  m_Father: {fileID: 2023189473}
+  m_Father: {fileID: 1985368425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.08166499, y: -0.5714798}
+  m_AnchoredPosition: {x: -0, y: -20}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1281620447
@@ -3848,12 +3848,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1602377844}
         m_TargetAssemblyTypeName: UIHandler, Assembly-CSharp
-        m_MethodName: Play
+        m_MethodName: LoadScene
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 13
+          m_IntArgument: 15
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4081,16 +4081,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1404042896}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 89.95392}
-  m_LocalScale: {x: 0.009260001, y: 0.009260001, z: 0.009260001}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0008242259}
+  m_LocalScale: {x: 0.999673, y: 0.999673, z: 0.999673}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 657219436}
-  m_Father: {fileID: 2023189473}
+  m_Father: {fileID: 1985368425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.1195679, y: -2.609375}
+  m_AnchoredPosition: {x: 220.00394, y: -240}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1404042898
@@ -4139,12 +4139,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1602377844}
         m_TargetAssemblyTypeName: UIHandler, Assembly-CSharp
-        m_MethodName: Play
+        m_MethodName: LoadScene
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 25
+          m_IntArgument: 27
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4214,16 +4214,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1425556511}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 89.95392}
-  m_LocalScale: {x: 0.009260001, y: 0.009260001, z: 0.009260001}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0008242259}
+  m_LocalScale: {x: 0.999673, y: 0.999673, z: 0.999673}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 715573639}
-  m_Father: {fileID: 2023189473}
+  m_Father: {fileID: 1985368425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.1195679, y: -1.5904083}
+  m_AnchoredPosition: {x: 220.00394, y: -130}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1425556513
@@ -4272,12 +4272,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1602377844}
         m_TargetAssemblyTypeName: UIHandler, Assembly-CSharp
-        m_MethodName: Play
+        m_MethodName: LoadScene
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 20
+          m_IntArgument: 22
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4635,7 +4635,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 398638359}
-  continueBtn: {fileID: 0}
   levelBtns:
   - {fileID: 1618820120}
   - {fileID: 1975682751}
@@ -4662,7 +4661,6 @@ MonoBehaviour:
   - {fileID: 1757721283}
   - {fileID: 27353059}
   - {fileID: 1404042898}
-  spritesBtns: []
 --- !u!1 &1618820118
 GameObject:
   m_ObjectHideFlags: 0
@@ -4690,16 +4688,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1618820118}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 89.95392}
-  m_LocalScale: {x: 0.009260001, y: 0.009260001, z: 0.009260001}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0008242259}
+  m_LocalScale: {x: 0.999673, y: 0.999673, z: 0.999673}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1560844128}
-  m_Father: {fileID: 2023189473}
+  m_Father: {fileID: 1985368425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.9562378, y: 1.4664154}
+  m_AnchoredPosition: {x: -220.0039, y: 200}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1618820120
@@ -4748,12 +4746,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1602377844}
         m_TargetAssemblyTypeName: UIHandler, Assembly-CSharp
-        m_MethodName: Play
+        m_MethodName: LoadScene
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4823,16 +4821,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1646493797}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 89.95392}
-  m_LocalScale: {x: 0.009260001, y: 0.009260001, z: 0.009260001}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0008242259}
+  m_LocalScale: {x: 0.999673, y: 0.999673, z: 0.999673}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1769374974}
-  m_Father: {fileID: 2023189473}
+  m_Father: {fileID: 1985368425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.9372864, y: -2.609375}
+  m_AnchoredPosition: {x: -110.00196, y: -240}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1646493799
@@ -4881,12 +4879,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1602377844}
         m_TargetAssemblyTypeName: UIHandler, Assembly-CSharp
-        m_MethodName: Play
+        m_MethodName: LoadScene
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 22
+          m_IntArgument: 24
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4956,16 +4954,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1714173940}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 89.95392}
-  m_LocalScale: {x: 0.009260001, y: 0.009260001, z: 0.009260001}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0008242259}
+  m_LocalScale: {x: 0.999673, y: 0.999673, z: 0.999673}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1190209699}
-  m_Father: {fileID: 2023189473}
+  m_Father: {fileID: 1985368425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.1006165, y: -1.5904083}
+  m_AnchoredPosition: {x: 110.00197, y: -130}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1714173942
@@ -5014,12 +5012,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1602377844}
         m_TargetAssemblyTypeName: UIHandler, Assembly-CSharp
-        m_MethodName: Play
+        m_MethodName: LoadScene
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 19
+          m_IntArgument: 21
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5089,16 +5087,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1723597391}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 89.95392}
-  m_LocalScale: {x: 0.009260001, y: 0.009260001, z: 0.009260001}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0008242259}
+  m_LocalScale: {x: 0.999673, y: 0.999673, z: 0.999673}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 472431929}
-  m_Father: {fileID: 2023189473}
+  m_Father: {fileID: 1985368425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.1195679, y: -0.5714798}
+  m_AnchoredPosition: {x: 220.00394, y: -20}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1723597393
@@ -5147,12 +5145,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1602377844}
         m_TargetAssemblyTypeName: UIHandler, Assembly-CSharp
-        m_MethodName: Play
+        m_MethodName: LoadScene
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 15
+          m_IntArgument: 17
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5222,16 +5220,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1757721281}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 89.95392}
-  m_LocalScale: {x: 0.009260001, y: 0.009260001, z: 0.009260001}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0008242259}
+  m_LocalScale: {x: 0.999673, y: 0.999673, z: 0.999673}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1152618426}
-  m_Father: {fileID: 2023189473}
+  m_Father: {fileID: 1985368425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.08166499, y: -2.609375}
+  m_AnchoredPosition: {x: -0, y: -240}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1757721283
@@ -5280,12 +5278,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1602377844}
         m_TargetAssemblyTypeName: UIHandler, Assembly-CSharp
-        m_MethodName: Play
+        m_MethodName: LoadScene
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 23
+          m_IntArgument: 25
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5434,16 +5432,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1821655990}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 89.95392}
-  m_LocalScale: {x: 0.009260001, y: 0.009260001, z: 0.009260001}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0008242259}
+  m_LocalScale: {x: 0.999673, y: 0.999673, z: 0.999673}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2061117519}
-  m_Father: {fileID: 2023189473}
+  m_Father: {fileID: 1985368425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.08166499, y: -1.5904083}
+  m_AnchoredPosition: {x: -0, y: -130}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1821655992
@@ -5492,12 +5490,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1602377844}
         m_TargetAssemblyTypeName: UIHandler, Assembly-CSharp
-        m_MethodName: Play
+        m_MethodName: LoadScene
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 18
+          m_IntArgument: 20
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5642,16 +5640,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1975682749}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 89.95392}
-  m_LocalScale: {x: 0.009260001, y: 0.009260001, z: 0.009260001}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0008242259}
+  m_LocalScale: {x: 0.999673, y: 0.999673, z: 0.999673}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2042378689}
-  m_Father: {fileID: 2023189473}
+  m_Father: {fileID: 1985368425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.9372864, y: 1.4664154}
+  m_AnchoredPosition: {x: -110.00196, y: 200}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1975682751
@@ -5700,12 +5698,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1602377844}
         m_TargetAssemblyTypeName: UIHandler, Assembly-CSharp
-        m_MethodName: Play
+        m_MethodName: LoadScene
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5748,6 +5746,66 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1975682749}
   m_CullTransparentMesh: 1
+--- !u!1 &1985368424
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1985368425}
+  m_Layer: 5
+  m_Name: Levels Btns
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1985368425
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1985368424}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1618820119}
+  - {fileID: 1975682750}
+  - {fileID: 2122872849}
+  - {fileID: 484573705}
+  - {fileID: 2047532067}
+  - {fileID: 1261603566}
+  - {fileID: 22916106}
+  - {fileID: 912949233}
+  - {fileID: 366502989}
+  - {fileID: 868921138}
+  - {fileID: 2136303535}
+  - {fileID: 1062640385}
+  - {fileID: 1281620446}
+  - {fileID: 332630671}
+  - {fileID: 1723597392}
+  - {fileID: 1091530118}
+  - {fileID: 620479153}
+  - {fileID: 1821655991}
+  - {fileID: 1714173941}
+  - {fileID: 1425556512}
+  - {fileID: 1999301363}
+  - {fileID: 1646493798}
+  - {fileID: 1757721282}
+  - {fileID: 27353058}
+  - {fileID: 1404042897}
+  m_Father: {fileID: 2063259669}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1999301362
 GameObject:
   m_ObjectHideFlags: 0
@@ -5775,16 +5833,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1999301362}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 89.95392}
-  m_LocalScale: {x: 0.009260001, y: 0.009260001, z: 0.009260001}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0008242259}
+  m_LocalScale: {x: 0.999673, y: 0.999673, z: 0.999673}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 984942048}
-  m_Father: {fileID: 2023189473}
+  m_Father: {fileID: 1985368425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.9562378, y: -2.609375}
+  m_AnchoredPosition: {x: -220.0039, y: -240}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1999301364
@@ -5833,12 +5891,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1602377844}
         m_TargetAssemblyTypeName: UIHandler, Assembly-CSharp
-        m_MethodName: Play
+        m_MethodName: LoadScene
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 21
+          m_IntArgument: 23
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5881,62 +5939,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1999301362}
   m_CullTransparentMesh: 1
---- !u!1 &2023189472
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2023189473}
-  m_Layer: 0
-  m_Name: Levels
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2023189473
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2023189472}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.81623, y: -8.306576, z: -9711.069}
-  m_LocalScale: {x: 107.95604, y: 107.95604, z: 107.95604}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1618820119}
-  - {fileID: 1975682750}
-  - {fileID: 2122872849}
-  - {fileID: 484573705}
-  - {fileID: 2047532067}
-  - {fileID: 1261603566}
-  - {fileID: 22916106}
-  - {fileID: 912949233}
-  - {fileID: 366502989}
-  - {fileID: 868921138}
-  - {fileID: 2136303535}
-  - {fileID: 1062640385}
-  - {fileID: 1281620446}
-  - {fileID: 332630671}
-  - {fileID: 1723597392}
-  - {fileID: 1091530118}
-  - {fileID: 620479153}
-  - {fileID: 1821655991}
-  - {fileID: 1714173941}
-  - {fileID: 1425556512}
-  - {fileID: 1999301363}
-  - {fileID: 1646493798}
-  - {fileID: 1757721282}
-  - {fileID: 27353058}
-  - {fileID: 1404042897}
-  m_Father: {fileID: 2063259669}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2042378688
 GameObject:
   m_ObjectHideFlags: 0
@@ -6043,16 +6045,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2047532066}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 89.95392}
-  m_LocalScale: {x: 0.009260001, y: 0.009260001, z: 0.009260001}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0008242259}
+  m_LocalScale: {x: 0.999673, y: 0.999673, z: 0.999673}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 375064325}
-  m_Father: {fileID: 2023189473}
+  m_Father: {fileID: 1985368425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.1195679, y: 1.4664154}
+  m_AnchoredPosition: {x: 220.00394, y: 200}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2047532068
@@ -6101,12 +6103,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1602377844}
         m_TargetAssemblyTypeName: UIHandler, Assembly-CSharp
-        m_MethodName: Play
+        m_MethodName: LoadScene
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 5
+          m_IntArgument: 7
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6296,7 +6298,7 @@ Canvas:
   m_GameObject: {fileID: 2063259665}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 774764421}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -6324,8 +6326,8 @@ RectTransform:
   m_Children:
   - {fileID: 140408407}
   - {fileID: 398638360}
+  - {fileID: 1985368425}
   - {fileID: 11154210}
-  - {fileID: 2023189473}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -6360,16 +6362,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2122872848}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 89.95392}
-  m_LocalScale: {x: 0.009260001, y: 0.009260001, z: 0.009260001}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0008242259}
+  m_LocalScale: {x: 0.999673, y: 0.999673, z: 0.999673}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1380931000}
-  m_Father: {fileID: 2023189473}
+  m_Father: {fileID: 1985368425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.08166499, y: 1.4664154}
+  m_AnchoredPosition: {x: -0, y: 200}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2122872850
@@ -6418,12 +6420,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1602377844}
         m_TargetAssemblyTypeName: UIHandler, Assembly-CSharp
-        m_MethodName: Play
+        m_MethodName: LoadScene
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6493,16 +6495,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2136303534}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 89.95392}
-  m_LocalScale: {x: 0.009260001, y: 0.009260001, z: 0.009260001}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0008242259}
+  m_LocalScale: {x: 0.999673, y: 0.999673, z: 0.999673}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 749457144}
-  m_Father: {fileID: 2023189473}
+  m_Father: {fileID: 1985368425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.9562378, y: -0.5714798}
+  m_AnchoredPosition: {x: -220.0039, y: -20}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2136303536
@@ -6551,12 +6553,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1602377844}
         m_TargetAssemblyTypeName: UIHandler, Assembly-CSharp
-        m_MethodName: Play
+        m_MethodName: LoadScene
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 11
+          m_IntArgument: 13
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

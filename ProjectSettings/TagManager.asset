@@ -7,6 +7,7 @@ TagManager:
   - Wall
   - WeakFloor
   - Spike
+  - Coin
   layers:
   - Default
   - TransparentFX
