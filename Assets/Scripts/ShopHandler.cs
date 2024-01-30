@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using YG;
@@ -6,8 +7,8 @@ using YG;
 public class ShopHandler : MonoBehaviour
 {
     [SerializeField] private Text coinsText;
-    [SerializeField] private GameObject[] buyBtns;
-    [SerializeField] private GameObject[] pickBtns;
+    [SerializeField] private Button[] buyBtns;
+    [SerializeField] private Button[] pickBtns;
     [SerializeField] private int priceCount = 10;
 
     private void OnEnable() => YandexGame.RewardVideoEvent += Rewarded;
@@ -23,23 +24,26 @@ public class ShopHandler : MonoBehaviour
     {
         coinsText.text = "Coins: " + YandexGame.savesData.coins;
 
-
         for (int i = 0; i < buyBtns.Length; i++)
         {
             if (YandexGame.savesData.isBought[i])
             {
-                pickBtns[i].SetActive(true);
+                pickBtns[i].gameObject.SetActive(true);
+                if (i == YandexGame.savesData.curSprite) pickBtns[i].interactable = false;
+                else pickBtns[i].interactable = true;
             }
             else
             {
-                buyBtns[i].SetActive(true);
-                if (Int32.Parse(buyBtns[i].name) * priceCount <= YandexGame.savesData.coins) buyBtns[i].GetComponent<Button>().interactable = true;
+                buyBtns[i].gameObject.SetActive(true);
+                if (Int32.Parse(buyBtns[i].name) * priceCount <= YandexGame.savesData.coins) buyBtns[i].interactable = true;
             }
         }
     }
 
     public void Buy(int index)
     {
+        buyBtns[index].gameObject.SetActive(false);
+
         YandexGame.savesData.isBought[index] = true;
         YandexGame.savesData.coins -= index * priceCount;
         YandexGame.savesData.curSprite = index;
@@ -52,6 +56,7 @@ public class ShopHandler : MonoBehaviour
     {
         YandexGame.savesData.curSprite = index;
         YandexGame.SaveProgress();
+        UpdateUI();
     }
 
     public void ShowRewAd()
