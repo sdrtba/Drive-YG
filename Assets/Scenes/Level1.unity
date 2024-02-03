@@ -871,11 +871,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1712085813819654429, guid: d7b2e5469862b6f4883de4b3bada8718, type: 3}
       propertyPath: m_LocalScale.x
-      value: 19.3677
+      value: 6.79
       objectReference: {fileID: 0}
     - target: {fileID: 1712085813819654429, guid: d7b2e5469862b6f4883de4b3bada8718, type: 3}
       propertyPath: m_LocalScale.y
-      value: 8.7309
+      value: 6.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 1712085813819654429, guid: d7b2e5469862b6f4883de4b3bada8718, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 6.79
       objectReference: {fileID: 0}
     - target: {fileID: 1712085813819654429, guid: d7b2e5469862b6f4883de4b3bada8718, type: 3}
       propertyPath: m_LocalPosition.x
@@ -915,6 +919,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1712085813819654429, guid: d7b2e5469862b6f4883de4b3bada8718, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1712085813819654429, guid: d7b2e5469862b6f4883de4b3bada8718, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7213363782624681722, guid: d7b2e5469862b6f4883de4b3bada8718, type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7213363782624681722, guid: d7b2e5469862b6f4883de4b3bada8718, type: 3}
+      propertyPath: m_DrawMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7213363782624681722, guid: d7b2e5469862b6f4883de4b3bada8718, type: 3}
+      propertyPath: m_MaskInteraction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7213363782624681722, guid: d7b2e5469862b6f4883de4b3bada8718, type: 3}
+      propertyPath: m_SpriteSortPoint
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8111593728543416668, guid: d7b2e5469862b6f4883de4b3bada8718, type: 3}
@@ -2564,6 +2588,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 733295406}
     m_Modifications:
+    - target: {fileID: 1728941705237122513, guid: b00f2b357586f2842ba3fc82dde61738, type: 3}
+      propertyPath: m_DrawMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1728941705237122513, guid: b00f2b357586f2842ba3fc82dde61738, type: 3}
+      propertyPath: m_MaskInteraction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1728941705237122513, guid: b00f2b357586f2842ba3fc82dde61738, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3327116532194400051, guid: b00f2b357586f2842ba3fc82dde61738, type: 3}
       propertyPath: m_Name
       value: Wall

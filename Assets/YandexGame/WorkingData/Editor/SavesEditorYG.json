@@ -1,18 +1,21 @@
 {
-  "idSave": 1,
+  "idSave": 4,
   "isFirstSession": false,
   "language": "ru",
-  "promptDone": false,
-  "maxLevel": 1,
-  "coins": 0,
+  "promptDone": true,
+  "maxLevel": 3,
+  "coins": 2,
   "isBought": [
-    false,
+    true,
     false,
     false,
     false,
     false,
     false
   ],
-  "idCoinsList": [],
+  "idCoinsList": [
+    "Coin-3",
+    "Coin-4"
+  ],
   "curSprite": 0
 }
