@@ -4,9 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Wall
-  - WeakFloor
-  - Spike
+  - Saw
+  - Spikes
   - Coin
   layers:
   - Default

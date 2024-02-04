@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5837453587207875241}
   m_Layer: 0
   m_Name: Spikes
-  m_TagString: WeakFloor
+  m_TagString: Spikes
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74,8 +74,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: e0049ed96e02a5b4cacb69a40202f407, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 7482667652216324306, guid: 9666b3b0e9536be48958b1405c8bd4aa, type: 3}
+  m_Color: {r: 0.8396226, g: 0.5686008, b: 0.43169275, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

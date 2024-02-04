@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -10,15 +9,14 @@ public class UIHandler : MonoBehaviour
     [SerializeField] private Button rateBtn;
     [SerializeField] private Button[] levelBtns;
 
-
     void Start()
     {
         slider.value = AudioListener.volume;
         if (levelBtns != null)
         {
-            foreach (Button btn in levelBtns)
+            for (int i = 0; i < levelBtns.Length; i++)
             {
-                if (Int32.Parse(btn.name) <= YandexGame.savesData.maxLevel) btn.interactable = true;
+                if (i < YandexGame.savesData.maxLevel) levelBtns[i].interactable = true;
             }
         }
         if (rateBtn != null && YandexGame.EnvironmentData.reviewCanShow) rateBtn.interactable = true;

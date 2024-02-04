@@ -1,5 +1,3 @@
-using System;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using YG;
@@ -9,7 +7,8 @@ public class ShopHandler : MonoBehaviour
     [SerializeField] private Text coinsText;
     [SerializeField] private Button[] buyBtns;
     [SerializeField] private Button[] pickBtns;
-    [SerializeField] private int priceCount = 10;
+    [SerializeField] private int priceCount;
+    [SerializeField] private int adCount;
 
     private void OnEnable() => YandexGame.RewardVideoEvent += Rewarded;
     private void OnDisable() => YandexGame.RewardVideoEvent -= Rewarded;
@@ -35,7 +34,7 @@ public class ShopHandler : MonoBehaviour
             else
             {
                 buyBtns[i].gameObject.SetActive(true);
-                if (Int32.Parse(buyBtns[i].name) * priceCount <= YandexGame.savesData.coins) buyBtns[i].interactable = true;
+                if (i * priceCount <= YandexGame.savesData.coins) buyBtns[i].interactable = true;
             }
         }
     }
@@ -50,7 +49,6 @@ public class ShopHandler : MonoBehaviour
         YandexGame.SaveProgress();
 
         UpdateUI();
-
     }
     public void Pick(int index)
     {
@@ -66,7 +64,7 @@ public class ShopHandler : MonoBehaviour
 
     void Rewarded(int id)
     {
-        YandexGame.savesData.coins += 5;
+        YandexGame.savesData.coins += adCount;
         UpdateUI();
     }
 }
