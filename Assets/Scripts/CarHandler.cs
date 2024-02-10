@@ -26,6 +26,7 @@ public class CarHandler : MonoBehaviour
         _rb = GetComponent<Rigidbody2D>();
         GetComponent<SpriteRenderer>().sprite = sprites[YandexGame.savesData.curSprite];
         YandexGame.FullscreenShow();
+        _rb.centerOfMass = new Vector2(0, 0.4f);
     }
 
     void Update()

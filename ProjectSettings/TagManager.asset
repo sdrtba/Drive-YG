@@ -4,9 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Saw
   - Spikes
   - Coin
+  - WeakFloor
+  - Wall
+  - Saw
   layers:
   - Default
   - TransparentFX
@@ -14,7 +16,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Spikes
   - 
   - 
   - 
