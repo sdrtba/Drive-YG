@@ -12,6 +12,7 @@ public class UIHandler : MonoBehaviour
     void Start()
     {
         slider.value = AudioListener.volume;
+        if (rateBtn != null && YandexGame.EnvironmentData.reviewCanShow) rateBtn.interactable = true;
         if (levelBtns != null)
         {
             for (int i = 0; i < levelBtns.Length; i++)
@@ -19,7 +20,6 @@ public class UIHandler : MonoBehaviour
                 if (i < YandexGame.savesData.maxLevel) levelBtns[i].interactable = true;
             }
         }
-        if (rateBtn != null && YandexGame.EnvironmentData.reviewCanShow) rateBtn.interactable = true;
     }
 
     public void LoadScene(int scene)

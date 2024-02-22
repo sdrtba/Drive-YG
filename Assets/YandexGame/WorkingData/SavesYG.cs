@@ -14,8 +14,8 @@ namespace YG
         // Ваши сохранения
         public int maxLevel = 1;
         public int coins = 0;
-        public bool[] isBought = new bool[6];
         public List<string> idCoinsList = new List<string>();
+        public bool[] isBought = new bool[15];
         public int curSprite = 0;
     }
 }

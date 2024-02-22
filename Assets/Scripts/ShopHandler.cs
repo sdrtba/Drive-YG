@@ -5,9 +5,12 @@ using YG;
 public class ShopHandler : MonoBehaviour
 {
     [SerializeField] private Text coinsText;
+    [SerializeField] private GameObject[] prices;
+    [SerializeField] private GameObject[] previews;
+    [SerializeField] private GameObject[] cars;
     [SerializeField] private Button[] buyBtns;
     [SerializeField] private Button[] pickBtns;
-    [SerializeField] private int priceCount;
+    [SerializeField] private int[] price;
     [SerializeField] private int adCount;
 
     private void OnEnable() => YandexGame.RewardVideoEvent += Rewarded;
@@ -16,45 +19,99 @@ public class ShopHandler : MonoBehaviour
     void Start()
     {
         YandexGame.savesData.isBought[0] = true;
-        UpdateUI();
+        coinsText.text = "Coins: " + YandexGame.savesData.coins;
     }
 
-    void UpdateUI()
+    public void OpenPreview(int index)
     {
-        coinsText.text = "Coins: " + YandexGame.savesData.coins;
-
-        for (int i = 0; i < buyBtns.Length; i++)
+        foreach (GameObject preview in previews)
         {
-            if (YandexGame.savesData.isBought[i])
+            preview.SetActive(false);
+        }
+
+        for (int i = 0; i < cars.Length; i++)
+        {
+            cars[i].SetActive(false);
+            pickBtns[i].gameObject.SetActive(false);
+            buyBtns[i].gameObject.SetActive(false);
+            pickBtns[i].interactable = false;
+            buyBtns[i].interactable = false;
+        }
+
+        previews[index].SetActive(true);
+    }
+
+    public void OpenCar(int index)
+    {
+        for (int i = 0; i < cars.Length; i++)
+        {
+            cars[i].SetActive(false);
+            pickBtns[i].gameObject.SetActive(false);
+            buyBtns[i].gameObject.SetActive(false);
+            pickBtns[i].interactable = false;
+            buyBtns[i].interactable = false;
+        }
+
+        cars[index].SetActive(true);
+
+        if (YandexGame.savesData.isBought[index])
+        {
+            pickBtns[index].gameObject.SetActive(true);
+            if (YandexGame.savesData.curSprite != index)
             {
-                pickBtns[i].gameObject.SetActive(true);
-                if (i == YandexGame.savesData.curSprite) pickBtns[i].interactable = false;
-                else pickBtns[i].interactable = true;
+                pickBtns[index].interactable = true;
             }
-            else
+        }
+        else
+        {
+            buyBtns[index].gameObject.SetActive(true);
+            prices[index].SetActive(true);
+            if (YandexGame.savesData.coins >= price[index])
             {
-                buyBtns[i].gameObject.SetActive(true);
-                if (i * priceCount <= YandexGame.savesData.coins) buyBtns[i].interactable = true;
+                buyBtns[index].interactable = true;
             }
         }
     }
 
     public void Buy(int index)
     {
-        buyBtns[index].gameObject.SetActive(false);
-
         YandexGame.savesData.isBought[index] = true;
-        YandexGame.savesData.coins -= index * priceCount;
+        YandexGame.savesData.coins -= price[index];
         YandexGame.savesData.curSprite = index;
         YandexGame.SaveProgress();
 
-        UpdateUI();
+        buyBtns[index].gameObject.SetActive(false);
+        prices[index].SetActive(false);
+        for (int i = 0; i < pickBtns.Length; i++)
+        {
+            if (YandexGame.savesData.curSprite == i)
+            {
+                pickBtns[i].interactable = false;
+            }
+            else
+            {
+                pickBtns[i].interactable = true;
+            }
+        }
+
+        coinsText.text = "Coins: " + YandexGame.savesData.coins;
     }
     public void Pick(int index)
     {
         YandexGame.savesData.curSprite = index;
         YandexGame.SaveProgress();
-        UpdateUI();
+
+        for (int i = 0; i < pickBtns.Length; i++)
+        {
+            if (YandexGame.savesData.curSprite == i)
+            {
+                pickBtns[i].interactable = false;
+            }
+            else
+            {
+                pickBtns[i].interactable = true;
+            }
+        }
     }
 
     public void ShowRewAd()
@@ -65,6 +122,20 @@ public class ShopHandler : MonoBehaviour
     void Rewarded(int id)
     {
         YandexGame.savesData.coins += adCount;
-        UpdateUI();
+        YandexGame.SaveProgress();
+
+        for (int i = 0; i < buyBtns.Length; i++)
+        {
+            if (YandexGame.savesData.coins >= price[i])
+            {
+                buyBtns[i].interactable = true;
+            }
+            else
+            {
+                buyBtns[i].interactable = false;
+            }
+        }
+
+        coinsText.text = "Coins: " + YandexGame.savesData.coins;
     }
 }

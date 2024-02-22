@@ -1,14 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using YG;
 
 public class CarHandler : MonoBehaviour
 {
-    [SerializeField] private ParticleSystem jumpEffect;
-
     [SerializeField] private GameObject winCanvas;
 
     [SerializeField] private Animation jumpAnimation;
@@ -30,7 +27,6 @@ public class CarHandler : MonoBehaviour
         GetComponent<SpriteRenderer>().sprite = sprites[YandexGame.savesData.curSprite];
         YandexGame.FullscreenShow();
         _rb.centerOfMass = new Vector2(0, 0.4f);
-        jumpEffect = GetComponent<ParticleSystem>();
     }
 
     void Update()
@@ -42,7 +38,6 @@ public class CarHandler : MonoBehaviour
 
     private IEnumerator Jump()
     {
-        jumpEffect.Play();
         _isOnFloor = false;
         _rb.AddForce(transform.up * force);
         jumpAnimation.Play();
