@@ -6,7 +6,6 @@ TagManager:
   tags:
   - Spikes
   - Coin
-  - WeakFloor
   - Wall
   - Saw
   layers:

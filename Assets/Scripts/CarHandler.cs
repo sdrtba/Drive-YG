@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using YG;
 
 public class CarHandler : MonoBehaviour
 {
+    [SerializeField] private ParticleSystem jumpEffect;
+
     [SerializeField] private GameObject winCanvas;
 
     [SerializeField] private Animation jumpAnimation;
@@ -27,6 +30,7 @@ public class CarHandler : MonoBehaviour
         GetComponent<SpriteRenderer>().sprite = sprites[YandexGame.savesData.curSprite];
         YandexGame.FullscreenShow();
         _rb.centerOfMass = new Vector2(0, 0.4f);
+        jumpEffect = GetComponent<ParticleSystem>();
     }
 
     void Update()
@@ -38,6 +42,7 @@ public class CarHandler : MonoBehaviour
 
     private IEnumerator Jump()
     {
+        jumpEffect.Play();
         _isOnFloor = false;
         _rb.AddForce(transform.up * force);
         jumpAnimation.Play();
@@ -66,7 +71,7 @@ public class CarHandler : MonoBehaviour
         }
         else if (collider.tag == "Finish")
         {
-            if (SceneManager.GetActiveScene().buildIndex - 1 > YandexGame.savesData.maxLevel) YandexGame.savesData.maxLevel += 1;
+            if (SceneManager.GetActiveScene().buildIndex - 1 > YandexGame.savesData.maxLevel && YandexGame.savesData.maxLevel <= 24) YandexGame.savesData.maxLevel += 1;
             foreach (string coinId in coinsListId) YandexGame.savesData.idCoinsList.Add(coinId);
             YandexGame.savesData.coins += coinsListId.Count;
             YandexGame.SaveProgress();
