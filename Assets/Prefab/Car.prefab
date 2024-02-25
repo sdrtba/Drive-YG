@@ -152,7 +152,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: -665871273, guid: d7ff6564fca29aa4b908f37a2d4effa4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -254,7 +254,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d52b6177200a5c049a10aa6e55cd200b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpEffect: {fileID: 0}
   winCanvas: {fileID: 1550831794457885006}
   jumpAnimation: {fileID: 1555672383867238830}
   sprites:
@@ -276,6 +275,7 @@ MonoBehaviour:
   rotationSpeed: 15
   speed: 40
   force: 150
+  material: {fileID: 2100000, guid: 82cc91725ab2f0c41920038a250d768b, type: 3}
 --- !u!1 &1550831794457885006
 GameObject:
   m_ObjectHideFlags: 0

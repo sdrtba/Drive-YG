@@ -15,11 +15,67 @@ public class CarHandler : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private float force;
 
+    private float jumpTime = 1f;
     private List<string> coinsListId = new List<string>();
     private bool _isOnFloor = true;
     private bool _isFocus = false;
     private Rigidbody2D _rb;
     private float _axis;
+
+    [Space]
+    [SerializeField] private Material material;
+    private Vector3 defOffset = new Vector3(-0.1f, -0.1f, 0);
+    private Vector3 offset;
+    private SpriteRenderer sprRndCaster;
+    private SpriteRenderer sprRndShadow;
+    private Transform transCaster;
+    private Transform transShadow;
+    private float _time = 0;
+    private float _offsetCoef = 0.002f;
+    private float _scaleCoef = 0.002f;
+    private void Shadow()
+    {
+        offset = defOffset;
+
+        transCaster = transform;
+        transShadow = new GameObject().transform;
+        transShadow.parent = transCaster;
+        transShadow.gameObject.name = "Shadow";
+        transShadow.localRotation = Quaternion.identity;
+
+        sprRndCaster = GetComponent<SpriteRenderer>();
+        sprRndShadow = transShadow.gameObject.AddComponent<SpriteRenderer>();
+        sprRndShadow.sprite = sprRndCaster.sprite;
+        sprRndShadow.sortingOrder = 2;
+        sprRndShadow.material = material;
+        sprRndShadow.color = new Color(0.48f, 0.32f, 0.23f);
+    }
+
+    void LateUpdate()
+    {
+        if (!_isOnFloor)
+        {
+            _time += Time.deltaTime;
+            if (_time <= jumpTime / 2)
+            {
+                offset -= new Vector3(_offsetCoef, _offsetCoef);
+                sprRndShadow.transform.localScale -= new Vector3(_scaleCoef, _scaleCoef);
+            }
+            else
+            {
+                offset += new Vector3(_offsetCoef, _offsetCoef);
+                sprRndShadow.transform.localScale += new Vector3(_scaleCoef, _scaleCoef);
+
+            }
+
+        }
+        else
+        {
+            _time = 0;
+            offset = defOffset;
+        }
+        transShadow.position = transform.position + offset;
+    }
 
     void Start()
     {
@@ -27,6 +83,8 @@ public class CarHandler : MonoBehaviour
         GetComponent<SpriteRenderer>().sprite = sprites[YandexGame.savesData.curSprite];
         YandexGame.FullscreenShow();
         _rb.centerOfMass = new Vector2(0, 0.4f);
+
+        Shadow();
     }
 
     void Update()
@@ -41,7 +99,7 @@ public class CarHandler : MonoBehaviour
         _isOnFloor = false;
         _rb.AddForce(transform.up * force);
         jumpAnimation.Play();
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(jumpTime);
         _isOnFloor = true;
     }
 
