@@ -30,12 +30,14 @@ public class CarHandler : MonoBehaviour
     private SpriteRenderer sprRndShadow;
     private Transform transCaster;
     private Transform transShadow;
+    private Vector2 _scale;
     private float _time = 0;
     private float _offsetCoef = 0.002f;
     private float _scaleCoef = 0.002f;
     private void Shadow()
     {
         offset = defOffset;
+        _scale = transform.localScale;
 
         transCaster = transform;
         transShadow = new GameObject().transform;
@@ -48,7 +50,7 @@ public class CarHandler : MonoBehaviour
         sprRndShadow.sprite = sprRndCaster.sprite;
         sprRndShadow.sortingOrder = 2;
         sprRndShadow.material = material;
-        sprRndShadow.color = new Color(0.48f, 0.32f, 0.23f);
+        sprRndShadow.color = new Color(0, 0, 0, 0.5f);
     }
 
     void LateUpdate()
@@ -67,12 +69,12 @@ public class CarHandler : MonoBehaviour
                 sprRndShadow.transform.localScale += new Vector3(_scaleCoef, _scaleCoef);
 
             }
-
         }
         else
         {
             _time = 0;
             offset = defOffset;
+            sprRndShadow.transform.localScale = _scale;
         }
         transShadow.position = transform.position + offset;
     }
@@ -120,7 +122,6 @@ public class CarHandler : MonoBehaviour
         else if (collider.tag == "Coin")
         {
             coinsListId.Add($"{collider.gameObject.name}-{SceneManager.GetActiveScene().buildIndex}");
-            Destroy(collider.gameObject);
         }
         else if (collider.tag == "Finish")
         {
