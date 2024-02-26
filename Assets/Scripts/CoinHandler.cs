@@ -14,6 +14,5 @@ public class CoinHandler : MonoBehaviour
     void OnTriggerEnter2D()
     {
         Instantiate(particle, transform.position, transform.rotation).GetComponent<ParticleSystem>().Play();
-        Destroy(gameObject);
     }
 }

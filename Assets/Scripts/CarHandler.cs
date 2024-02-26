@@ -6,6 +6,8 @@ using YG;
 
 public class CarHandler : MonoBehaviour
 {
+    [SerializeField] private GameObject jumpEffect;
+    [SerializeField] private GameObject boomEffect;
     [SerializeField] private GameObject winCanvas;
 
     [SerializeField] private Animation jumpAnimation;
@@ -21,6 +23,7 @@ public class CarHandler : MonoBehaviour
     private bool _isFocus = false;
     private Rigidbody2D _rb;
     private float _axis;
+
 
     [Space]
     [SerializeField] private Material material;
@@ -92,7 +95,7 @@ public class CarHandler : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space) && _isOnFloor) StartCoroutine(Jump());
-        if (Input.GetKeyDown(KeyCode.Escape)) SceneManager.LoadScene(0);
+        if (Input.GetKeyDown(KeyCode.Tab)) SceneManager.LoadScene(0);
         if (Input.anyKey) _isFocus = true;
     }
 
@@ -101,6 +104,7 @@ public class CarHandler : MonoBehaviour
         _isOnFloor = false;
         _rb.AddForce(transform.up * force);
         jumpAnimation.Play();
+        Instantiate(jumpEffect, transform.position, transform.rotation).GetComponent<ParticleSystem>().Play();
         yield return new WaitForSeconds(jumpTime);
         _isOnFloor = true;
     }
@@ -117,11 +121,14 @@ public class CarHandler : MonoBehaviour
     {
         if (collider.tag == "Saw" || collider.tag == "Spikes" && _isOnFloor)
         {
+            gameObject.SetActive(false);
+            Instantiate(boomEffect, transform.position, transform.rotation).GetComponent<ParticleSystem>().Play();
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
         else if (collider.tag == "Coin")
         {
             coinsListId.Add($"{collider.gameObject.name}-{SceneManager.GetActiveScene().buildIndex}");
+            Destroy(collider.gameObject);
         }
         else if (collider.tag == "Finish")
         {
