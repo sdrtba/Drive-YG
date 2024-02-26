@@ -8,6 +8,7 @@ TagManager:
   - Coin
   - Wall
   - Saw
+  - Car
   layers:
   - Default
   - TransparentFX
@@ -16,7 +17,7 @@ TagManager:
   - Water
   - UI
   - Spikes
-  - 
+  - Wall
   - 
   - 
   - 

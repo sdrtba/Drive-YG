@@ -1,15 +1,22 @@
 {
-  "idSave": 6,
+  "idSave": 33,
   "isFirstSession": false,
   "language": "ru",
   "promptDone": false,
-  "maxLevel": 3,
-  "coins": 4,
+  "maxLevel": 9,
+  "coins": 11,
   "idCoinsList": [
     "Coin-3",
     "Coin (1)-3",
     "Coin-4",
-    "Coin (1)-4"
+    "Coin-5",
+    "Coin (1)-5",
+    "Coin (2)-5",
+    "Coin (1)-4",
+    "Coin-6",
+    "Coin (1)-6",
+    "Coin (2)-6",
+    "Coin (1)-7"
   ],
   "isBought": [
     false,

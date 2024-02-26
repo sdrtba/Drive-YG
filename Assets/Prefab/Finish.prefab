@@ -144,6 +144,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 82cc91725ab2f0c41920038a250d768b, type: 3}
-  layer:
-    serializedVersion: 2
-    m_Bits: 128

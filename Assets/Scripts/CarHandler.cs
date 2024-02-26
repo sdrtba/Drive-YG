@@ -6,6 +6,7 @@ using YG;
 
 public class CarHandler : MonoBehaviour
 {
+    [SerializeField] private GameObject coinEffect;
     [SerializeField] private GameObject jumpEffect;
     [SerializeField] private GameObject boomEffect;
     [SerializeField] private GameObject winCanvas;
@@ -37,6 +38,7 @@ public class CarHandler : MonoBehaviour
     private float _time = 0;
     private float _offsetCoef = 0.002f;
     private float _scaleCoef = 0.002f;
+    private bool _isFinish = false;
     private void Shadow()
     {
         offset = defOffset;
@@ -51,7 +53,7 @@ public class CarHandler : MonoBehaviour
         sprRndCaster = GetComponent<SpriteRenderer>();
         sprRndShadow = transShadow.gameObject.AddComponent<SpriteRenderer>();
         sprRndShadow.sprite = sprRndCaster.sprite;
-        sprRndShadow.sortingOrder = 2;
+        sprRndShadow.sortingOrder = sprRndCaster.sortingOrder - 1;
         sprRndShadow.material = material;
         sprRndShadow.color = new Color(0, 0, 0, 0.5f);
     }
@@ -113,32 +115,55 @@ public class CarHandler : MonoBehaviour
     {
         _axis = Input.GetAxisRaw("Horizontal") * rotationSpeed;
 
-        if (_axis != 0) _rb.AddTorque(-_axis);
-        if (_isFocus) _rb.AddForce(transform.up * speed);
+        if (_axis != 0 && !_isFinish) _rb.AddTorque(-_axis);
+        if (_isFocus && !_isFinish) _rb.AddForce(transform.up * speed);
     }
 
     void OnTriggerStay2D(Collider2D collider)
     {
         if (collider.tag == "Saw" || collider.tag == "Spikes" && _isOnFloor)
         {
-            gameObject.SetActive(false);
-            Instantiate(boomEffect, transform.position, transform.rotation).GetComponent<ParticleSystem>().Play();
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            StartCoroutine(Die());
         }
-        else if (collider.tag == "Coin")
+    }
+
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.tag == "Coin")
         {
+            Instantiate(coinEffect, transform.position, transform.rotation).GetComponent<ParticleSystem>().Play();
             coinsListId.Add($"{collider.gameObject.name}-{SceneManager.GetActiveScene().buildIndex}");
             Destroy(collider.gameObject);
         }
         else if (collider.tag == "Finish")
         {
-            if (SceneManager.GetActiveScene().buildIndex - 1 > YandexGame.savesData.maxLevel && YandexGame.savesData.maxLevel <= 24) YandexGame.savesData.maxLevel += 1;
-            foreach (string coinId in coinsListId) YandexGame.savesData.idCoinsList.Add(coinId);
-            YandexGame.savesData.coins += coinsListId.Count;
-            YandexGame.SaveProgress();
-
-            winCanvas.SetActive(true);
-            gameObject.SetActive(false);
+            StartCoroutine(Finish());
         }
+    }
+
+    IEnumerator Die()
+    {
+        sprRndCaster.sprite = null;
+        sprRndShadow.sprite = null;
+        _rb.bodyType = RigidbodyType2D.Static;
+        Instantiate(boomEffect, transform.position, transform.rotation).GetComponent<ParticleSystem>().Play();
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    IEnumerator Finish()
+    {
+        _isFinish = true;
+        _rb.drag *= 3;
+        gameObject.layer = 1;
+        if (SceneManager.GetActiveScene().buildIndex - 1 > YandexGame.savesData.maxLevel && YandexGame.savesData.maxLevel <= 24) YandexGame.savesData.maxLevel += 1;
+        foreach (string coinId in coinsListId) YandexGame.savesData.idCoinsList.Add(coinId);
+        YandexGame.savesData.coins += coinsListId.Count;
+        YandexGame.SaveProgress();
+
+
+        yield return new WaitForSeconds(1);
+        winCanvas.SetActive(true);
+        gameObject.SetActive(false);
     }
 }
