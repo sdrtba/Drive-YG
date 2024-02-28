@@ -39,6 +39,7 @@ public class CarHandler : MonoBehaviour
     private float _offsetCoef = 0.002f;
     private float _scaleCoef = 0.002f;
     private bool _isFinish = false;
+    private bool _isDied = false;
     private void Shadow()
     {
         offset = defOffset;
@@ -96,7 +97,7 @@ public class CarHandler : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && _isOnFloor) StartCoroutine(Jump());
+        if (Input.GetKeyDown(KeyCode.Space) && _isOnFloor && !_isDied) StartCoroutine(Jump());
         if (Input.GetKeyDown(KeyCode.Tab)) SceneManager.LoadScene(0);
         if (Input.anyKey) _isFocus = true;
     }
@@ -106,7 +107,9 @@ public class CarHandler : MonoBehaviour
         _isOnFloor = false;
         _rb.AddForce(transform.up * force);
         jumpAnimation.Play();
-        Instantiate(jumpEffect, transform.position, transform.rotation).GetComponent<ParticleSystem>().Play();
+        GameObject jumpObj = Instantiate(jumpEffect, transform.position, transform.rotation);
+        jumpObj.GetComponent<AudioSource>().Play();
+        jumpObj.GetComponent<ParticleSystem>().Play();
         yield return new WaitForSeconds(jumpTime);
         _isOnFloor = true;
     }
@@ -131,7 +134,9 @@ public class CarHandler : MonoBehaviour
     {
         if (collider.tag == "Coin")
         {
-            Instantiate(coinEffect, transform.position, transform.rotation).GetComponent<ParticleSystem>().Play();
+            GameObject coinObj = Instantiate(coinEffect, transform.position, transform.rotation);
+            coinObj.GetComponent<AudioSource>().Play();
+            coinObj.GetComponent<ParticleSystem>().Play();
             coinsListId.Add($"{collider.gameObject.name}-{SceneManager.GetActiveScene().buildIndex}");
             Destroy(collider.gameObject);
         }
@@ -143,10 +148,13 @@ public class CarHandler : MonoBehaviour
 
     IEnumerator Die()
     {
+        _isDied = true;
         sprRndCaster.sprite = null;
         sprRndShadow.sprite = null;
         _rb.bodyType = RigidbodyType2D.Static;
-        Instantiate(boomEffect, transform.position, transform.rotation).GetComponent<ParticleSystem>().Play();
+        GameObject boomObj = Instantiate(boomEffect, transform.position, transform.rotation);
+        boomObj.GetComponent<AudioSource>().Play();
+        boomObj.GetComponent<ParticleSystem>().Play();
         yield return new WaitForSeconds(1);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
