@@ -213,7 +213,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 2
   m_LinearDrag: 2
-  m_AngularDrag: 10
+  m_AngularDrag: 12
   m_GravityScale: 0
   m_Material: {fileID: 6200000, guid: 796383d01a4fbe944a94ec22612cd87b, type: 2}
   m_IncludeLayers:
@@ -275,7 +275,7 @@ MonoBehaviour:
   - {fileID: 1484294532, guid: d7ff6564fca29aa4b908f37a2d4effa4, type: 3}
   - {fileID: 426117919, guid: d7ff6564fca29aa4b908f37a2d4effa4, type: 3}
   - {fileID: 1879112439, guid: d7ff6564fca29aa4b908f37a2d4effa4, type: 3}
-  rotationSpeed: 15
+  rotationSpeed: 25
   speed: 40
   force: 150
   material: {fileID: 2100000, guid: 82cc91725ab2f0c41920038a250d768b, type: 3}
