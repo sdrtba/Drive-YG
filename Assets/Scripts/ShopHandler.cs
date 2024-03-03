@@ -19,7 +19,7 @@ public class ShopHandler : MonoBehaviour
     void Start()
     {
         YandexGame.savesData.isBought[0] = true;
-        coinsText.text = "Coins: " + YandexGame.savesData.coins;
+        coinsText.text += " " + YandexGame.savesData.coins;
     }
 
     public void OpenPreview(int index)

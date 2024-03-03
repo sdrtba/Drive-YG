@@ -112,6 +112,11 @@ public class CarHandler : MonoBehaviour
         jumpObj.GetComponent<ParticleSystem>().Play();
         yield return new WaitForSeconds(jumpTime);
         _isOnFloor = true;
+        jumpObj = Instantiate(jumpEffect, transform.position, transform.rotation);
+        AudioSource sound = jumpObj.GetComponent<AudioSource>();
+        sound.pitch = 0.7f;
+        sound.Play();
+        jumpObj.GetComponent<ParticleSystem>().Play();
     }
 
     void FixedUpdate()
