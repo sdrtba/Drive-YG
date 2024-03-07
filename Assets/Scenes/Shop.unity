@@ -11061,7 +11061,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u041C\u043E\u043D\u0435\u0442\u044B: 0"
+  m_Text: "\u041C\u043E\u043D\u0435\u0442\u044B:"
 --- !u!222 &1399280472
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11104,9 +11104,9 @@ MonoBehaviour:
   textLComponent: {fileID: 1399280471}
   infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
   text: 
-  ru: "\u041C\u043E\u043D\u0435\u0442\u044B: 0"
-  en: 'Coins: 0'
-  tr: 'Paralar: 0'
+  ru: "\u041C\u043E\u043D\u0435\u0442\u044B:"
+  en: 'Coins:'
+  tr: 'Madeni paralar:'
   az: 
   be: 
   he: 
