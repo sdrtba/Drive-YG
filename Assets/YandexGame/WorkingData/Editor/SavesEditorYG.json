@@ -1,10 +1,10 @@
 {
-  "idSave": 15,
+  "idSave": 22,
   "isFirstSession": false,
   "language": "ru",
   "promptDone": false,
-  "maxLevel": 12,
-  "coins": 16,
+  "maxLevel": 7,
+  "coins": 14,
   "idCoinsList": [
     "Coin-3",
     "Coin (1)-4",
@@ -12,18 +12,15 @@
     "Coin-5",
     "Coin (1)-5",
     "Coin (2)-5",
-    "Coin-9",
-    "Coin (1)-9",
+    "Coin (2)-6",
+    "Coin-6",
+    "Coin (1)-6",
     "Coin-8",
     "Coin (1)-8",
-    "Coin (2)-8",
-    "Coin-10",
-    "Coin-14",
-    "Coin (1)-14",
-    "Coin (2)-14",
-    "Coin (2)-18"
+    "Coin (2)-8"
   ],
   "isBought": [
+    true,
     false,
     false,
     false,
@@ -32,13 +29,12 @@
     false,
     false,
     false,
+    true,
+    true,
     false,
-    false,
-    false,
-    false,
-    false,
+    true,
     false,
     false
   ],
-  "curSprite": 0
+  "curSprite": 12
 }

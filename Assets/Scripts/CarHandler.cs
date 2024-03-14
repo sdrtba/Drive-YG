@@ -10,6 +10,7 @@ public class CarHandler : MonoBehaviour
     [SerializeField] private GameObject jumpEffect;
     [SerializeField] private GameObject boomEffect;
     [SerializeField] private GameObject winCanvas;
+    [SerializeField] private GameObject pauseCanvas;
 
     [SerializeField] private Animation jumpAnimation;
     [SerializeField] private Sprite[] sprites;
@@ -99,7 +100,10 @@ public class CarHandler : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && _isOnFloor && !_isDied) StartCoroutine(Jump());
         if (Input.GetKeyDown(KeyCode.Tab)) SceneManager.LoadScene(0);
-        if (Input.anyKey) _isFocus = true;
+        if (Input.anyKey) { 
+            _isFocus = true;
+            if (_isFocus) pauseCanvas.SetActive(false); 
+        }
     }
 
     private IEnumerator Jump()
@@ -112,11 +116,6 @@ public class CarHandler : MonoBehaviour
         jumpObj.GetComponent<ParticleSystem>().Play();
         yield return new WaitForSeconds(jumpTime);
         _isOnFloor = true;
-        jumpObj = Instantiate(jumpEffect, transform.position, transform.rotation);
-        AudioSource sound = jumpObj.GetComponent<AudioSource>();
-        sound.pitch = 0.7f;
-        sound.Play();
-        jumpObj.GetComponent<ParticleSystem>().Play();
     }
 
     void FixedUpdate()
@@ -173,6 +172,7 @@ public class CarHandler : MonoBehaviour
         foreach (string coinId in coinsListId) YandexGame.savesData.idCoinsList.Add(coinId);
         YandexGame.savesData.coins += coinsListId.Count;
         YandexGame.SaveProgress();
+        YandexGame.NewLeaderboardScores("Leaderboard", YandexGame.savesData.maxLevel);
 
 
         yield return new WaitForSeconds(1);

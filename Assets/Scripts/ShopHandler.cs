@@ -19,7 +19,7 @@ public class ShopHandler : MonoBehaviour
     void Start()
     {
         YandexGame.savesData.isBought[0] = true;
-        coinsText.text += " " + YandexGame.savesData.coins;
+        coinsText.text = coinsText.text.Split(" ")[0] + " " + YandexGame.savesData.coins;
     }
 
     public void OpenPreview(int index)
@@ -94,7 +94,7 @@ public class ShopHandler : MonoBehaviour
             }
         }
 
-        coinsText.text = "Coins: " + YandexGame.savesData.coins;
+        coinsText.text = coinsText.text.Split(" ")[0] + " " + YandexGame.savesData.coins;
     }
     public void Pick(int index)
     {
@@ -136,6 +136,6 @@ public class ShopHandler : MonoBehaviour
             }
         }
 
-        coinsText.text = "Coins: " + YandexGame.savesData.coins;
+        coinsText.text = coinsText.text.Split(" ")[0] + " " + YandexGame.savesData.coins;
     }
 }

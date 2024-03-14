@@ -6,13 +6,13 @@ using YG;
 public class UIHandler : MonoBehaviour
 {
     [SerializeField] private Slider slider;
-    [SerializeField] private Button rateBtn;
+    [SerializeField] private GameObject rateBtn;
     [SerializeField] private Button[] levelBtns;
 
     void Start()
     {
         slider.value = AudioListener.volume;
-        if (rateBtn != null && YandexGame.EnvironmentData.reviewCanShow) rateBtn.interactable = true;
+        if (rateBtn != null && YandexGame.EnvironmentData.reviewCanShow) rateBtn.SetActive(true);
         if (levelBtns != null)
         {
             for (int i = 0; i < levelBtns.Length; i++)
